@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTD-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Document</title>
+    <style>
+        .container .item{
+            background-color: red;
+        }
+        .footer-container .item{
+            background-color: blue;
+        }
+        .main-container > .item{
+            background-color: green;
+            padding: 10px;
+        }
+        .button {
+            background-color: yellow;
+            padding: 10px;
+        }
+        .button.active {
+            background-color: orange;
+            padding: 10px;
+        }
+        .button.danger {
+            background-color: red;
+            padding: 10px;
+        }
+        .item1 + .item2 {
+            background-color: blue;
+        }
+        input[type="text"] {
+            background-color: yellow;
+            border: 2px;
+            height: 30px;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        container
+        <div class="item">
+            item
+        </div>
+    </div>
+
+    <div class="main-container">
+        container
+        <div class="item">
+            item 
+            </div>
+            <div class="item">
+                item 1
+            </div>
+            <div class="item">
+                item 2
+            </div>
+            <div class="item">
+                item 3
+            </div>
+        </div>
+    </div>
+
+    <button class="button">ปุ่ม</button>
+    <button class="button active">ปุ่ม</button>
+    <button class="button danger">ปุ่ม</button>
+
+    <div class="item1">item1</div>
+    <div class="item2">item2</div>
+
+    <input type="text" name="username">
+    <input type="text" name="password">
+    <input type="text" name="email">
+</body>
+</html>
